@@ -1,0 +1,213 @@
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.contents .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+.contents .container .headSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 24px;
+}
+.contents .container .headSide .titleSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.contents .container .headSide .filterSide {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    position: relative;
+    width: 180px;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.dropdown:hover img{
+    transform: rotate(-90deg);
+}
+.dropdown img {
+    width: 16px;
+    height: 16px;
+    transition: .2s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contents .container .bodySide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.contents .container .bodySide .cardDesign{
+    min-width: unset;
+}
+
+.contents .container .footSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contents .container .footSide .pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+}
+.contents .container .footSide .pagination button{
+    height: 48px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    transition: .2s ease-in-out;
+}
+.contents .container .footSide .pagination button:hover{
+    background-color: whitesmoke;
+}
+.contents .container .footSide .pagination .boxPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contents .container .footSide .pagination .boxPage .item{
+    width: fit-content;
+    min-width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+.contents .container .footSide .pagination .boxPage .item.active{
+    border-bottom: 1px solid #ccc;
+}
+.contents .container .footSide .pagination .boxPage .item:hover{
+    border-bottom: 1px solid #ccc;
+}
+.selectionPath{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 16px 0;
+    border-bottom: 1px solid #1d1d1d16;
+}
+.selectionPath .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    width: 100%;
+    overflow-x: scroll;
+}
+.selectionPath .container::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.selectionPath .container p{
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    white-space: nowrap;
+}
+.selectionPath .container p.active{
+    opacity: 1;
+}
+.selectionPath .container p:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width : 1024px) {
+    .contents .container .bodySide .cardDesign{
+        width: calc(100% / 3 - 32px / 3);
+    }
+}
+@media screen and (max-width : 676px) {
+    .contents .container .bodySide{
+        gap: 12px;
+    }
+    .contents .container .bodySide .cardDesign{
+        width: calc(100% / 2 - 6px);
+    }
+    .contents .container .headSide{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width : 448px) {
+    .dropdown{
+        width: fit-content;
+    }
+    .dropdown button{
+        display: flex;
+        gap: 12px;
+    }
+    .contents .container .footSide .pagination .boxPage .item.hid{
+        display: none;
+    }
+}

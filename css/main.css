@@ -1,0 +1,1252 @@
+/* SETUP */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 64px;
+    max-width: 1568px;
+    overflow: hidden;
+    position: relative;
+}
+button{
+    cursor: pointer;
+}
+@media screen and (max-width : 756px) {
+    .container{
+        padding: 0 32px;
+    }
+}
+.marginSection{
+    margin-bottom: 72px;
+}
+/* SETUP */
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 8px;
+    height: 12px;
+    padding: 2px;
+}
+::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+    border-radius: 100px;
+    padding: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0056D2;
+    border-radius: 100px;
+    margin: 2px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #044AAF;
+}
+/* SCROLLBAR */
+
+/* FONT */
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../assets/fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../assets/fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Nexa-Bold;
+    src: url(../assets/fonts/nexa/Nexa-Heavy.ttf);
+}
+/* FONTS COLOUR */
+.white{
+    color: white;
+}
+.black{
+    color: #1d1d1d;
+}
+
+/* OPACITY */
+.op-80{
+    opacity: .8;
+}
+.op-60{
+    opacity: .6;
+}
+.op-40{
+    opacity: .4;
+}
+/* FONT-TYPE */
+.normalText{
+    font-family: Montserrat-Regular;
+}
+.mediumText{
+    font-family: Montserrat-Medium;
+}
+.semiText{
+    font-family: Montserrat-SemiBold;
+}
+.boldText{
+    font-family: Montserrat-Bold;
+}
+.nexaText{
+    font-family: Nexa-Bold;
+}
+
+/* TEXT-SIZE */
+.miniSize{
+    font-size: 12px;
+    line-height: 16px;
+}
+.normalSize{
+    font-size: 16px;
+    line-height: 28px;
+}
+.mediumSize{
+    font-size: 20px;
+    line-height: 32px;
+}
+.midSize{
+    font-size: 28px;
+}
+.semiSize{
+    font-size: 40px;
+}
+.bigSize{
+    font-size: 12px;
+    line-height: 16px;
+}
+.heroTitle{
+    font-size: 52px;
+    font-family: Nexa-Bold;
+    line-height: 72px;
+}
+
+@media screen and (max-width : 1024px) {
+    .heroTitle{
+        font-size: 36px;
+        line-height: 60px;
+    }
+    .semiSize{
+        font-size: 28px;
+    }
+    .midSize{
+        font-size: 22px;
+    }
+    .mediumSize{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .normalSize{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width : 769px) {
+    .heroTitle{
+        font-size: 32px;
+        line-height: 52px;
+    }
+    .semiSize{
+        font-size: 24px;
+    }
+    .midSize{
+        font-size: 18px;
+    }
+    .mediumSize{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .normalSize{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+/* FONT */
+
+/* COLOUR */
+.bg-blue{
+    background-color: #0056D2;
+}
+.blue{
+    color: #0056D2;
+}
+/* COLOUR */
+/* BUTTON */
+.mainBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nexa-Bold;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background-color: #0056D2;
+    transition: .2s ease-in-out;
+}
+.mainBtn.alpha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nexa-Bold;
+    color: #0056D2;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background-color: white;
+    transition: .2s ease-in-out;
+}
+.secBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nexa-Bold;
+    color: #0056D2;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background-color: white;
+    border: 1px solid #0056D2;
+    transition: .2s ease-in-out;
+}
+.mainBtn:hover{
+    background-color: #044AAF;
+}
+.mainBtn.alpha:hover{
+    background-color: #e3e3e3;
+}
+.secBtn:hover{
+    background-color: whitesmoke;
+}
+/* BUTTON */
+
+/* CARD */
+.cardDesign{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 326px;
+    width: calc(100% / 4 - 12px);
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #DBE0E1;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    background-color: white;
+}
+.cardDesign .imageCard{
+    width: 100%;
+}
+.cardDesign .imageCard img{
+    width: 100%;
+}
+.cardDesign .bodyCard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: .2s ease-in-out;
+}
+.cardDesign .bodyCard p.boldText{
+    margin-bottom: 8px;
+}
+.cardDesign .bodyCard .detailCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+.cardDesign .bodyCard .detailCard .itemDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.cardDesign:hover{
+    background-color: whitesmoke;
+}
+.cardDesign:hover .bodyCard{
+    padding: 0 2px;
+}
+.detailSertifikasi{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    gap: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #EFF6FF;
+}
+.cardDesign .extraCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+    margin-top: 16px;
+}
+.cardDesign .extraCard  .blockPercent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.cardDesign .extraCard  .blockPercent .percentBar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 12px;
+    border-radius: 100px;
+    background-color: whitesmoke;
+}
+.cardDesign .extraCard  .blockPercent .percentBar .percentProg{
+    height: 12px;
+    background-color: #0056D2;
+    border-radius: 100px;
+}
+.cardDesign .extraCard  .blockPercent .textPercent{
+    width: 52px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardDesign .extraCard button{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* CARD */
+
+
+/* NAVBAR */
+.navPromotion{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    height: 40px;
+}
+.navPromotion .container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navPromotion .container .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid #e3e3e3;
+    overflow: visible;
+}
+nav .container{
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    overflow: visible;
+}
+nav .container .logoSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+nav .container .logoSide a img{
+    height: 40px;
+}
+nav .container .logoSide a img.mobileLogo{
+    display: none;
+}
+nav .container .logoSide .hamMenu{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+nav .container .logoSide .hamMenu img{
+    height: 16px;
+}
+nav .container .searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #DBE0E1;
+    width: 100%;
+}
+nav .container .searchbar input{
+    height: 52px;
+    padding-left: 16px;
+    width: 100%;
+    outline: none;
+    display: flex;
+}
+nav .container .searchbar button{
+    height: 52px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    transition: .2s ease-in-out;
+}
+nav .container .searchbar button:hover{
+    background-color: #044AAF;
+}
+nav .container .navigationPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 16px;
+}
+nav .container .navigationPage .coverNavigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav .container .navigationPage .coverNavigation a{
+    white-space: nowrap;
+    transition: .2s ease-in-out;
+}
+nav .container .navigationPage .coverNavigation span{
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #0056D2;
+    position: absolute;
+    bottom: -4px;
+    transition: .2s ease-in-out;
+}
+nav .container .navigationPage .coverNavigation.active a,
+nav .container .navigationPage .coverNavigation:hover a{
+    opacity: 1;
+}
+nav .container .navigationPage .coverNavigation.active span,
+nav .container .navigationPage .coverNavigation:hover span{
+    width: 24px;
+}
+nav .container  .account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+nav .container .account button.sign{
+    white-space: nowrap;
+    padding: 0 12px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid #0056D2;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+}
+nav .container .account button.hamMenu{
+    display: none;
+}
+nav .container  .account button:hover{
+    background-color: #0056D2;
+    color: white;
+}
+
+.navSideMobile{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .4s ease-in-out;
+    display: none;
+    left: -110%;
+}
+.navSideMobile .container{
+    background-color: white;
+    height: 100vh;
+    width: 70vw;
+    min-width: 356px;
+    flex-direction: column;
+    padding-top: 64px;
+    gap: 32px;
+}
+.navSideMobile .container .headSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navSideMobile .container .headSide a img{
+    height: 32px;
+}
+.navSideMobile .container .headSide button{
+    background-color: transparent;
+}
+.navSideMobile .container .headSide button img{
+    height: 16px;
+    transition: .2s ease-in-out;
+}
+.navSideMobile .container .headSide button img:hover{
+    transform: rotate(90deg);
+}
+.navSideMobile .container .bodySide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    padding-top: 24px;
+    border-top: 1px solid #DBE0E1;
+}
+.navSideMobile .container .bodySide a{
+    transition: .2s ease-in-out;
+    transform: translateX(-10px);
+}
+.navSideMobile .container .bodySide a:hover{
+    opacity: 1;
+    transform: translateX(8px);
+}
+
+.dropbtn {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+.dropdowns {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  z-index: 1000;
+  justify-content: flex-start !important;
+}
+.dropdown-contents {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  transform: translateY(32px);
+  position: absolute;
+  background-color: #f9f9f9;
+  max-width: 372px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  padding: 16px 0;
+  gap: 12px;
+}
+
+.dropdowns:hover .dropdown-contents {
+  display: flex;
+}
+.itemDown{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.itemDown:hover{
+    background-color: rgb(236, 236, 236);
+}
+.itemDown img{
+    height: 28px;
+}
+.textDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+}
+.textDown p{
+    white-space: wrap;
+    width: 100%;
+    min-width: 280px;
+}
+
+@media screen and (max-width : 1024px) {
+    nav .container .navigationPage{
+        display: none;
+    }
+    nav .container .logoSide .hamMenu{
+        display: flex;
+    }
+    .navSideMobile{
+        display: flex;
+    }
+    .mainBtn,
+    .mainBtn.alpha,
+    .secBtn{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width : 756px){
+    nav .container{
+        gap: 12px;
+    }
+    nav .container .account{
+        display: none;
+    }
+    .mainBtn,
+    .mainBtn.alpha,
+    .secBtn{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width : 562px) {
+    nav .container .logoSide a img.mainLogo{
+        display: none;
+    }
+    nav .container .logoSide a img.mobileLogo{
+        display: flex;
+    }
+    nav .container .account{
+        display: flex;
+    }
+    nav .container .account button.sign,
+    nav .container .logoSide .hamMenu{
+        display: none;
+    }
+    nav .container .account button.hamMenu{
+        display: flex;
+    }
+    nav .container .searchbar input,
+    nav .container .searchbar button{
+        height: 44px;
+    }
+    nav .container .logoSide a img.mobileLogo{
+        height: 36px;
+    }
+    .mainBtn,
+    .mainBtn.alpha,
+    .secBtn{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 356px) {
+    .navSideMobile .container{
+        width: 100vw;
+    }
+}
+/* NAVBAR */
+
+/* LAYOUT */
+.twoSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.twoSide .container{
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.twoSide .container .content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 4;
+}
+.twoSide .container .content .boxAction{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    white-space: nowrap;
+    margin-top: 8px;
+}
+.twoSide .container .image{
+    display: flex;
+    flex: 5;
+    justify-content: center;
+    align-items: center;
+}
+.twoSide .container .image img{
+    width: 100%;
+}
+@media screen and (max-width : 1024px) {
+    .twoSide .container{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+}
+
+.marquee{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marquee .container{
+    flex-direction: row;
+    background-color: #0056D2;
+    margin: 72px 0;
+    padding: 16px 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.marquee .container img{
+    height: 32px;
+    animation: marqueeMove 90s infinite linear;
+}
+@keyframes marqueeMove {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.callToAction{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    position: relative;
+    overflow: hidden;
+}
+.callToAction .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.callToAction .container .content{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+.callToAction .container .content p,
+.callToAction .container .content h2{
+    text-align: center;
+}
+.callToAction .container .content button{
+    margin-top: 8px;
+}
+.callToAction .container .content .attribute-one{
+    position: absolute;
+    left: -25%;
+    top: 0;
+}
+.callToAction .container .content .attribute-two{
+    position: absolute;
+    right: -25%;
+    bottom: 0;
+}
+.callToAction .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+/* START FOOTER */
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 70px;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer .container .topFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+}
+footer .container .topFooter .bigSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    gap: 8px;
+}
+footer .container .topFooter .bigSide .smallSide{
+    display: flex;
+    flex-direction: column;
+}
+footer .container .topFooter .bigSide .smallSide.alpha{
+    display: none;
+}
+footer .container .topFooter .bigSide .smallSide p.normalSize{
+    margin-bottom: 8px;
+}
+footer .container .topFooter .bigSide.alpha{
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-evenly;
+}
+footer .container .topFooter .bigSide a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+footer .container .topFooter .bigSide a img{
+    height: 40px;
+}
+footer .container .topFooter .bigSide .iconSosmed{
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+footer .container .topFooter .bigSide .iconSosmed img{
+    height: 36px;
+}
+footer .container .topFooter .bigSide .smallSide .titleNavFooter,
+footer .container .topFooter .bigSide .titleNavFooter{
+    margin-bottom: 12px;
+}
+footer .container .topFooter .bigSide input{
+    background-color: transparent;
+    color: #1D1D1D;
+    padding: 8px 24px;
+    padding-left: 36px;
+    border-bottom: 1px solid #1d1d1d53;
+    background-image: url(../assets/vectors/mail.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 12px;
+    font-family: Montserrat-Regular;
+    outline: none;
+}
+footer .container .topFooter .bigSide input::placeholder{
+    color: #1D1D1D;
+}
+footer .container .bottomFooter{
+    margin-top: 40px;
+    padding: 32px 0;
+    border-top: 1px solid #ccc9c9c2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+footer .container .bottomFooter .copyRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+footer .container .bottomFooter .copyRight img{
+    height: 16px;
+}
+footer .container .bottomFooter .extraLinks{
+    display: flex;
+    gap: 24px;
+}
+@media screen  and (max-width : 764px){
+    footer .container .topFooter{
+        flex-direction: column;
+    }
+    footer .container .topFooter .bigSide .smallSide.alpha{
+        display: flex;
+    }
+    footer .container .bottomFooter .extraLinks{
+        display: none;
+    }
+    footer .container .topFooter .bigSide.alpha .smallSide{
+        flex: 1;
+    }
+    footer .container .topFooter .bigSide{
+        width: 100%;
+    }
+    footer .container .bottomFooter .copyRight p{
+        font-size: 14px;
+    }
+}
+/* END FOOTER */
+
+/* SIMPLE CARD LAYOUT */
+.simpleCardLayout{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.simpleCardLayout .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+.simpleCardLayout .container .headSide{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.simpleCardLayout .container .bodySide{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+    width: 100%;
+}
+.simpleCardLayout .container .bodySide::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+/* SIMPLE CARD LAYOUT */
+
+/* PROMOTION */
+.staticPromotion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+}
+.staticPromotion .container{
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.staticPromotion .container .textSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 4;
+    z-index: 2;
+}
+.staticPromotion .container .textSide button {
+    margin-top: 8px;
+}
+.staticPromotion .container .imageSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+    z-index: 2;
+}
+.staticPromotion .container .imageSide img{
+    width: 100%;
+}
+.staticPromotion .container .attribute-one,
+.staticPromotion .container .attribute-two
+{
+    position: absolute;
+}
+.staticPromotion .container .attribute-one{
+    top: 0px;
+}
+.staticPromotion .container .attribute-two{
+    bottom: 0;
+    right: 50vw;
+    z-index: 1;
+}
+/* PROMOTION */
+/* FORUM */
+.forumTrigger{
+    position: fixed;
+    right: 24px;
+    bottom: 84px;
+    border-radius: 100px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.forumTrigger button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.forumTrigger button img{
+    height: 28px;
+}
+/* FORUM */
+/* BOTCHAT */
+.chatbot{
+    position: fixed;
+    bottom: -624px;
+    right: 24px;
+    max-width: 456px;
+    background-color: white;
+    z-index: 10000;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #1d1d1d1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+.chatbot .container{
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.chatbot .container .headSide{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+}
+.chatbot .container .headSide .action{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.chatbot .container .headSide .action img{
+    height: 20px;
+    opacity: .8;
+    cursor: pointer;
+}
+.chatbot .container .extraSide{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 8px;
+    background-color: #f3f8ff;
+    padding: 12px;
+}
+.chatbot .container .extraSide img{
+    height: 32px;
+}
+.chatbot .container .bodySide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 28px 12px;
+    width: 100%;
+}
+.chatbot .container .bodySide .itemBot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: .2s ease-in-out;
+    padding: 8px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px solid #1d1d1d1b;
+}
+.chatbot .container .bodySide .itemBot:hover{
+    background-color: rgb(246, 246, 246);
+}
+.chatbot .container .footSide{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+.chatbot .container .footSide .inputSide{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #1d1d1d1b;
+    border-radius: 8px;
+    padding: 4px;
+}
+.chatbot .container .footSide .inputSide input{
+    height: 40px;
+    padding: 0 12px;
+    outline: navajowhite;
+    width: 100%;
+}
+.chatbot .container .footSide .inputSide button{
+    height: 40px;
+    aspect-ratio: 1;
+    background-color: whitesmoke;
+    filter: saturate(0%);
+    transition: .2s ease-in-out;
+}
+.chatbot .container .footSide .inputSide button:hover{
+    filter: saturate(100%);
+}
+.botTrigger{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px #1d1d1d4a;
+    transition: .2s ease-in-out;
+}
+.botTrigger:hover{
+    filter: brightness(90%);
+}
+/* BOTCHAT */
+
+
+
+/* LAYOUT */
+@media screen and (max-width : 1280px) {
+    .cardDesign{
+        min-width: 310px;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .staticPromotion .container{
+        flex-direction: column;
+    }
+    .staticPromotion .container .attribute-one{
+        opacity: .4;
+    }
+}
+@media screen and (max-width : 769px) {
+    .cardDesign{
+        min-width: 230px;
+    }
+}
+@media screen and (max-width : 656px) {
+    .callToAction .container .content{
+        width: 100%;
+    }
+    .forumTrigger button p{
+        display: none;
+    }
+    .forumTrigger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #044AAF;
+        z-index: 1000;
+    }
+    .botTrigger p{
+        display: none;
+    }
+    .forumTrigger, .botTrigger{
+        aspect-ratio: 1;
+        height: 48px;
+        overflow: hidden;
+        z-index: 1000;
+    }
+}
+@media screen and (max-width : 600px) {
+    .marginSection{
+        margin-top: 40px;
+    }
+    .marquee .container{
+        margin: 40px 0;
+    }
+    .simpleCardLayout .container{
+        gap: 24px;
+    }
+}
+@media screen and (max-width : 512px) {
+    .chatbot{
+        width: calc(100% - 48px);
+    }
+}
+@media screen and (max-width : 480px) {
+    footer .container .topFooter .bigSide.alpha{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .twoSide .container .content{
+        width: 100%;
+    }
+    .twoSide .container .content .secBtn{
+        display: none;
+    }
+    .cardDesign{
+        min-width: 210px;
+    }
+}
+@media screen and (max-width : 320px) {
+  
+}
+
+

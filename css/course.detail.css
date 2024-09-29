@@ -1,0 +1,558 @@
+.courseDetail{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.courseDetail .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+}
+.courseDetail .container .navigationCourse{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.courseDetail .container .navigationCourse .itemNavigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7CB2FF;
+    padding: 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+    transition: .2s ease-in-out;
+}
+.courseDetail .container .navigationCourse .itemNavigation:hover{
+    background: #F3F9FF;
+}
+.courseDetail .container .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+.courseDetail .container .content .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+}
+.courseDetail .container .content .main .introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.courseDetail .container .content .main .introduction .extraSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+.courseDetail .container .content .main .introduction .extraSide .itemDetail{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.courseDetail .container .content .main .introduction .extraSide .itemDetail img{
+    width: 16px;
+}
+.courseDetail .container .content .main .introduction .actionSide{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 8px;
+}
+.courseDetail .container .content .main .introduction .actionSide .secBtn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.courseDetail .container .content .main .divider{
+    width: 100%;
+    height: 1px ;
+    background-color: #E1E1E1;
+}
+.courseDetail .container .content .main .video{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+.courseDetail .container .content .main .video .videoSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.courseDetail .container .content .main .video .videoSide img{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.courseDetail .container .content .main .video .videoSide h2{
+    margin-bottom: 4px;
+}
+.courseDetail .container .content .main .video .materiSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.courseDetail .container .content .main .video .materiSide h2{
+    margin-bottom: 8px;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: not-allowed;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 8px 0;
+    align-items: center;
+    gap: 12px;
+    transition: .2s ease-in-out;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri.checked{
+    cursor: pointer;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri:hover{
+    background-color: rgb(247, 247, 247);
+    padding: 8px 4px;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri img{
+    height: 24px;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri .mid{
+    width: 100%;
+    overflow: hidden;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri .left,
+.courseDetail .container .content .main .video .materiSide .itemMateri .right{
+    min-width: fit-content;
+}
+.courseDetail .container .content .main .video .materiSide .itemMateri.lastMateri{
+    border-bottom: none;
+}
+.courseDetail .container .content .main .benefit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+.courseDetail .container .content .main .benefit .boxBenefit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.courseDetail .container .content .main .benefit .boxBenefit .itemBenefit{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% / 2 - 12px);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.courseDetail .container .content .main .benefit .boxBenefit .itemBenefit h3{
+    margin-bottom: 4px;
+}
+.courseDetail .container .content .main .teacher{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+.courseDetail .container .content .main .teacher .profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.courseDetail .container .content .main .teacher .profile .image{
+    width: 128px;
+    aspect-ratio: 1;
+}
+.courseDetail .container .content .main .teacher .profile .image img{
+    width: 100%;
+}
+.courseDetail .container .content .main .teacher .profile .detailProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+.courseDetail .container .content .main .teacher .profile .detailProfile .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.courseDetail .container .content .main .teacher .profile .detailProfile .name img{
+    height: 16px;
+}
+.courseDetail .container .content .main .teacher .deskription{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.courseDetail .container .content .main .teacher .deskription p{
+    text-align: justify;
+}
+.courseDetail .container .content .main .teacher .deskription p span{
+    font-family: Montserrat-Bold;
+}
+.courseDetail .container .content .rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+.courseDetail .container .content .rating .boxRating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.courseDetail .container .content .rating .boxRating .itemRating{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: calc(100% / 2 - 12px);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #E1E1E1;
+    transition: .2s ease-in-out;
+}
+.courseDetail .container .content .rating .boxRating .itemRating:hover{
+    background-color: whitesmoke;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .profileRating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .profileRating .image{
+    width: 64px;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .profileRating .image img{
+    width: 100%;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .profileRating .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .profileRating .user .name img{
+    height: 12px;
+    margin-top: 4px;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .profileRating .extra{
+    margin-top: 4px;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .ulasan{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+.courseDetail .container .content .rating .boxRating .itemRating .ulasan p{
+    text-align: justify;
+    width: 100%;
+}
+.courseDetail .container .content .requirement{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    padding-bottom: 32px;
+}
+.courseDetail .container .content .requirement .boxReq{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 16px;
+}
+.courseDetail .container .content .requirement .boxReq .itemReq{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+.courseDetail .container .content .requirement .boxReq .itemReq img{
+    margin-top: 4px;
+    height: 20px;
+}
+.courseDetail .container .content .payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 512px;
+    padding: 24px;
+    border: 1px solid #7CB2FF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #1d1d1d0c;
+    gap: 24px;
+    position: relative;
+}
+.courseDetail .container .content .payment .divider{
+    width: 100%;
+    height: 1px;
+    background-color: #E1E1E1;
+}
+.courseDetail .container .content .payment .headSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+.courseDetail .container .content .payment .headSide .navigationPayment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.courseDetail .container .content .payment .headSide .navigationPayment .link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.courseDetail .container .content .payment .headSide .navigationPayment .close{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+}
+.courseDetail .container .content .payment .headSide .navigationPayment .close img{
+    width: 100%;
+}
+.courseDetail .container .content .payment .headSide .navigationPayment a:hover{
+    text-decoration: underline;
+}
+.courseDetail .container .content .payment .headSide .titleCourse{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+.courseDetail .container .content .payment .bodySide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+}
+.courseDetail .container .content .payment .bodySide h3{
+    margin-bottom: 4px;
+}
+.courseDetail .container .content .payment .bodySide .itemBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.courseDetail .container .content .payment .bodySide .itemBody img{
+    height: 20px;
+}
+.courseDetail .container .content .payment .footSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+.courseDetail .container .content .payment .footSide .price{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 8px;
+}
+.courseDetail .container .content .payment .footSide button{
+    width: 100%;
+}
+.mobileAction{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    padding: 24px 0;
+    border-top: 1px solid #E1E1E1;
+    box-shadow: 0px 0px 12px #1d1d1d0c;
+    display: none;
+    transition: .4s ease-in-out;
+}
+.mobileAction .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.mobileAction .container .leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+.mobileAction .container .rightSide{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mobileAction .container .rightSide button span.mobile-ver{
+    display: none;
+}
+.otherCard .container .headSide{
+    border-top: 1px solid #E1E1E1;
+    padding-top: 32px;
+    width: 100%;
+}
+@media screen and (max-width : 1280px) {
+    .courseDetail .container .content .rating .boxRating .itemRating,
+    .courseDetail .container .content .main .benefit .boxBenefit .itemBenefit{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .courseDetail .container .content{
+        justify-content: center;
+    }
+    .courseDetail .container .content .payment{
+        position: fixed;
+        bottom: -100%;
+        background-color: white;    
+        width: 100%;
+        transition: .4s ease-in-out;
+        z-index: 100;
+    }
+    .courseDetail .container .content .payment .headSide .navigationPayment .close{
+        display: flex;
+    }
+    .courseDetail .container{
+        align-items: center;
+    }
+    .courseDetail .container .content .main,
+    .courseDetail .container .navigationCourse{
+        max-width: 600px;
+    }
+    .mobileAction{
+        display: flex;
+    }
+}
+@media screen and (max-width : 770px) {
+    .courseDetail .container .content .payment .footSide .price img{
+        height: 20px;
+    }
+    .courseDetail .container .content .payment .headSide .navigationPayment .close{
+        width: 18px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .mobileAction .container .rightSide button span.tablet{
+        display: none;
+    }
+    .mobileAction .container .rightSide button span.mobile-ver{
+        display: flex;
+    }
+}
+@media screen and (max-width : 562px) {
+    .courseDetail .container .navigationCourse .itemNavigation{
+        padding: 0;
+        border: none;
+    }
+    .courseDetail .container .navigationCourse .itemNavigation a{
+        white-space: nowrap;
+    }
+    .courseDetail .container .navigationCourse{
+        overflow-x: scroll;
+    }
+    .courseDetail .container .navigationCourse::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    .courseDetail .container .content .main .teacher .profile .image{
+        width: 64px;
+    }
+    .courseDetail .container .content .payment{
+        min-width: unset;
+    }
+    .courseDetail .container .content .payment .headSide .navigationPayment .close{
+        width: 16px;
+    }
+}
+@media screen and (max-width : 430px) {
+    .courseDetail .container .content .main .introduction .actionSide .secBtn{
+        display: none;
+    }
+}

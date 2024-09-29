@@ -1,0 +1,470 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.content .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+}
+.content .container .navigationContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 24px;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    min-width: 324px;
+    gap: 32px;
+}
+.content .container .navigationContent .profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.content .container .navigationContent .profile .image{
+    width: 64px;
+}
+.content .container .navigationContent .profile .image img{
+    width: 100%;
+}
+.content .container .navigationContent .profile .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+.content .container .navigationContent .link{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.content .container .navigationContent .link a{
+    opacity: .6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.content .container .navigationContent .link a.active{
+    opacity: 1;
+}
+.content .container .navigationContent .link a:hover{
+    padding: 12px 4px;
+    opacity: .8;
+}
+.content .container .navigationContent .link a.active:hover{
+    opacity: 1;
+}
+.content .container .detailContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 24px 0;
+    gap: 32px;
+    overflow: hidden;
+}
+.content .container .detailContent .titlePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+.content .container .detailContent .overall{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    gap: 16px;
+}
+.content .container .detailContent .overall .itemOverall{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    transition: .2s ease-in-out;
+    min-width: calc(calc(100% / 3) - calc(32px / 3));
+}
+.content .container .detailContent .overall .itemOverall .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+.content .container .detailContent .overall .itemOverall .head .image{
+    position: relative;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+}
+.content .container .detailContent .overall .itemOverall .head .image img{
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+.content .container .detailContent .overall .itemOverall .head .image .blu{
+    position: absolute;
+    opacity: 0;
+}
+.content .container .detailContent .overall .itemOverall:hover{
+    background-color: #0056D2;
+}
+.content .container .detailContent .overall .itemOverall:hover p{
+    color: white;
+    opacity: 1;
+}
+.content .container .detailContent .overall .itemOverall:hover .head .image .blu{
+    opacity: 1;
+}
+.content .container .detailContent .overall .itemOverall:hover .head .image .blc{
+    opacity: 0;
+}
+.content .container .detailContent .twoSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+.content .container .detailContent .twoSide .side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #E1E1E1;
+    border-radius: 12px;
+    flex: 1;
+}
+.content .container .detailContent .twoSide .side .titleSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+}
+.content .container .detailContent .twoSide .side .contentSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemPercent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemPercent .blockPercent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemPercent .blockPercent .percentBar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 12px;
+    border-radius: 100px;
+    background-color: whitesmoke;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemPercent .blockPercent .percentBar .percentProg{
+    height: 12px;
+    background-color: #0056D2;
+    border-radius: 100px;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemPercent .blockPercent .textPercent{
+    width: 52px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px 0;
+    cursor: pointer;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemMessage:hover{
+    background-color: whitesmoke;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemMessage .titleMessage{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemMessage .titleMessage span{
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: #0056D2;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemMessage .bodyMessage{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    overflow-y: scroll;
+    height: 52px;
+}
+.content .container .detailContent .twoSide .side .contentSide .itemMessage .bodyMessage::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+/* COURSE */
+.content .container .detailContent .promotionContent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    border-radius: 12px;
+    padding: 20px 32px;
+    position: relative;
+}
+.content .container .detailContent .promotionContent .textSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    position: relative;
+    z-index: 2;
+}
+.content .container .detailContent .promotionContent .imageSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 64px;
+    max-width: 64px;
+    aspect-ratio: 1;
+    margin-right: 24px;
+    position: relative;
+    z-index: 2;
+}
+.content .container .detailContent .promotionContent .imageSide img{
+    width: 100%;
+}
+.content .container .detailContent .promotionContent .attribute-three{
+    position: absolute;
+    height: 100%;
+    right: 24px;
+    z-index: 0;
+}
+.content .container .detailContent .boxCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #E1E1E1;
+    width: 100%;
+    gap: 24px;
+    overflow: hidden;
+}
+.content .container .detailContent .boxCards .headSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+.content .container .detailContent .boxCards .headSide .textSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+}
+.content .container .detailContent .boxCards .headSide .textSide p{
+    white-space: nowrap;
+}
+.content .container .detailContent .boxCards .headSide .searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #DBE0E1;
+    width: 100%;
+}
+.content .container .detailContent .boxCards .headSide .searchbar input{
+    height: 52px;
+    padding-left: 16px;
+    width: 100%;
+    outline: none;
+    display: flex;
+}
+.content .container .detailContent .boxCards .headSide .searchbar button{
+    height: 52px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    transition: .2s ease-in-out;
+}
+.content .container .detailContent .boxCards .headSide .searchbar button:hover{
+    background-color: #044AAF;
+}
+.content .container .detailContent .boxCards .bodySide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+.content .container .detailContent .boxCards .bodySide::-webkit-scrollbar{
+    width: 0;
+    height: 0px;
+}
+.content .container .detailContent .boxCards:hover .bodySide::-webkit-scrollbar{
+    height: 12px;
+}
+
+@media screen and (max-width : 1024px) {
+    .content .container .detailContent .twoSide{
+        flex-direction: column;
+        width: 100%;
+    }
+    .content .container .detailContent .twoSide .side{
+        width: 100%;
+    }
+    .content .container .detailContent .overall{
+        flex-direction: column;
+    }
+    .content .container .detailContent .boxCards .headSide{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .content .container .detailContent .promotionContent .imageSide{
+        min-width: 52px;
+        max-width: 52px;
+    }
+    .content .container .detailContent .promotionContent{
+        gap: 28px;
+    }
+}
+@media screen and (max-width : 756px) {
+    .content .container .detailContent{
+        padding: 12px 0;
+    }
+    .content .container .navigationContent{
+        position: fixed;
+        background-color: white;
+        width: calc(100% - 64px);
+        max-width: 562px;
+        bottom: 32px;
+        z-index: 100;
+        box-shadow: 0px 0px 12px #1d1d1d0e;
+    }
+    .content .container .navigationContent .profile{
+        display: none;
+    }
+    .content .container .navigationContent .link{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content .container{
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .content .container .detailContent{
+        max-width: 562px;
+    }
+    .content .container .detailContent{
+        gap: 20px;
+    }
+    .content .container .detailContent .twoSide{
+        gap: 16px;
+    }
+    .forumTrigger, .botTrigger{
+        transform: translateY(-120px);
+        z-index: 100;
+    }
+}
+@media screen and (max-width : 676px) {
+    .content .container .detailContent .boxCards .bodySide::-webkit-scrollbar{
+        width: 0;
+        height: 0px;
+    }
+    .content .container .detailContent .boxCards:hover .bodySide::-webkit-scrollbar{
+        width: 0;
+        height: 0px;
+    }
+}
+@media screen and (max-width : 576px) {
+    .content .container .navigationContent .link a{
+        flex-direction: column;
+        gap: 4px;
+    }
+    .content .container .navigationContent{
+        padding: 12px;
+    }
+    .content .container .detailContent .promotionContent .imageSide{
+        min-width: 48px;
+        max-width: 48px;
+    }
+    .content .container .detailContent .promotionContent{
+        gap: 16px;
+    }
+}
+@media screen and (max-width : 394px) {
+    .content .container .navigationContent .link a p{
+        display: none;
+    }
+    .content .container .navigationContent{
+        min-width: unset;
+    }
+}

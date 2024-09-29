@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <title>Codeverse | Upgrade Skill Digital Sekarang</title>
+</head>
+<body>
+    <div class="background">
+        <div class="cover">
+            <div class="content">
+                <div class="navigation">
+                    <a href="index.html">
+                        <img src="assets/vectors/logo_colour_horizontal.svg" alt="logo">
+                    </a>
+                    <a href="signin.html" class="mediumText normalSize black op-60 u">Sign in</a>
+                </div>
+                <div class="createAccount">
+                    <p class="nexaText mediumSize black">Welcome Back</p>
+                    <form action="">
+                        <div class="boxInput">
+                            <label class="normalSize normalText black op-60" for="email">Alamat email<span>*</span></label>
+                            <input type="email" name="email" id="email" placeholder="Masukkan alamat email anda" autocomplete="off">
+                        </div>
+                        <div class="boxInput">
+                            <label class="normalSize normalText black op-60" for="password">Password<span>*</span></label>
+                            <input type="password" name="password" id="password" placeholder="Masukkan password anda" autocomplete="off">
+                        </div>
+                        <button class="create goToDashboard bg-blue white boldText normalSize" type="button">Log In Sekrang</button>
+                    </form>
+                </div>
+                <div class="divider">
+                    <span></span>
+                    <p class="miniSize normalText black op-60">atau</p>
+                    <span></span>
+                </div>
+                <div class="linkAccount">
+                    <button type="button" class="goToDashboard google">
+                        <img src="assets/vectors/Google.svg" alt="google">
+                        <p class="normalSize normalText black op-80">Login dengan Google</p>
+                    </button>
+                    <button type="button" class="goToDashboard apple">
+                        <img src="assets/vectors/Apple.svg" alt="apple">
+                        <p class="normalSize normalText white op-80">Login dengan Apple</p>
+                    </button>
+                    <button type="button" class="goToDashboard facebook">
+                        <img src="assets/vectors/Facebooks.svg" alt="facebook">
+                        <p class="normalSize normalText white op-80">Login dengan Facebook</p>
+                    </button>
+                </div>
+                <div class="other">
+                    <p class="black normalSize normalText op-80">Belum punya akun? <span>Sign In Sekarang</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const btns = document.querySelectorAll("button")
+    btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            document.location.href = "dashboard.html"
+        })
+    })
+</script>
+</html>

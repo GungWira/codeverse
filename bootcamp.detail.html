@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/course.detail.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+
+    <title>Codeverse | Upgrade Skill Digital Sekarang</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <section class="navPromotion bg-blue" data-aos="fade-down" data-aos-delay="800">
+        <div class="container">
+            <div class="content">
+                <img src="assets/vectors/star_navbar.svg" alt="star" class="star_nav">
+                <p class="boldText miniSize white">Beli Kelas Sekarang : Diskon Kelas Hingga 90%</p>
+                <img src="assets/vectors/star_navbar.svg" alt="star" class="star_nav">
+            </div>
+        </div>
+    </section>
+    <nav class="mainNav" data-aos="fade-down" data-aos-delay="800">
+        <div class="container">
+            <div class="logoSide">
+                <button class="hamMenu">
+                    <img src="assets/vectors/ham_menu.svg" alt="hamMenu" class="hamImg">
+                </button>
+                <a href="index.html">
+                    <img src="assets/vectors/logo_colour_horizontal.svg" alt="logo" class="mainLogo">
+                    <img src="assets/vectors/logo_colour_single.svg" alt="logo" class="mobileLogo">
+                </a>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Cari kursus disini..." autocomplete="off" class="normalSize normalText black">
+                <button type="button" class="searchBtn bg-blue">
+                    <img src="assets/vectors/search_white.svg" alt="search">
+                </button>
+            </div>
+            <div class="navigationPage">
+                <div class="coverNavigation dropdowns">
+                    <p class="normalText dropbtn black op-80 normalSize">
+                        Programs
+                        <img src="assets/vectors/drop_black.svg" alt="">
+                    </p>
+                    <span class="curent"></span>
+                    <div class="dropdown-contents">
+                        <a href="course.html" class="itemDown">
+                            <img src="assets/vectors/course_blue.svg" alt="">
+                            <div class="textDown">
+                                <p class="boldText normalSize black op-80">Course</p>
+                                <p class="normalSize black normalText op-80">Pelajari berbagai kursus teknologi terbaik disini!</p>
+                            </div>
+                        </a>
+                        <a href="bootcamp.html" class="itemDown">
+                            <img src="assets/vectors/bootcamp_blue.svg" alt="">
+                            <div class="textDown">
+                                <p class="boldText normalSize black op-80">Bootcamp</p>
+                                <p class="normalSize black normalText op-80">Jelajahi berbagai skill dunia teknologi dengan cepat</p>
+                            </div>
+                        </a>
+                        <a href="certificate.html" class="itemDown">
+                            <img src="assets/vectors/certificate_blue.svg" alt="">
+                            <div class="textDown">
+                                <p class="boldText normalSize black op-80">Certificate</p>
+                                <p class="normalSize black normalText op-80">Tingkatkan profesionalitas karir Anda bersama kami! </p>
+                            </div>
+                        </a>
+                      </div>
+                </div>
+                <div class="coverNavigation">
+                    <a href="learnPath.html" class="normalText black op-80 normalSize">Learn Path</a>
+                    <span class="curent"></span>
+                </div>
+            </div>
+            <div class="account">
+                <button class="sign blue nexaText mediumSize">Join Now</button>
+                <button class="hamMenu">
+                    <img src="assets/vectors/ham_menu.svg" alt="hamMenu" class="hamImg">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="navSideMobile canClose">
+        <div class="container">
+            <div class="headSide">
+                <a href="index.html">
+                    <img src="assets/vectors/logo_colour_horizontal.svg" alt="logo">
+                </a>
+                <button type="button" class="close-btn">
+                    <img src="assets/vectors/close_black.svg" alt="close">
+                </button>
+            </div>
+            <div class="bodySide">
+                <a href="course.html" class="normalSize normalText black op-80">Course</a>
+                <a href="bootcamp.html" class="normalSize normalText black op-80">Bootcamp</a>
+                <a href="certificate.html" class="normalSize normalText black op-80">Certificate</a>
+                <a href="learnPath.html" class="normalSize normalText black op-80">Learn Path</a>
+                <a href="signin.html" class="normalSize normalText black op-80">Join Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- NAVBAR -->
+    <!-- CHAT BOT -->
+    <section class="chatbot">
+        <div class="container">
+            <div class="headSide">
+                <p class="mediumSize semiText black">Customer Service</p>
+                <div class="action">
+                    <img src="assets/vectors/trash.svg" alt="icon" class="trash">
+                    <img src="assets/vectors/close_black.svg" alt="icon" class="close">
+                </div>
+            </div>
+            <div class="extraSide">
+                <img src="assets/vectors/customer_service.svg" alt="icon">
+                <p class="normalSize normalText black op-80">Selamat datang di pusat bantuan Codeverse. Ada yang bisa kami bantu?</p>
+            </div>
+            <div class="bodySide">
+                <p class="normalSize normalText black op-80">Pertanyaan umum:</p>
+                <div class="itemBot">
+                    <p class="normalSize normalText black op-80">Apakah kursus berkalu seumur hidup?</p>
+                </div>
+                <div class="itemBot">
+                    <p class="normalSize normalText black op-80">Berapa lama proses order kursus?</p>
+                </div>
+                <div class="itemBot">
+                    <p class="normalSize normalText black op-80">Apakah sertifikat bisa saya unduh nantinya?</p>
+                </div>
+            </div>
+            <div class="footSide">
+                <div class="inputSide">
+                    <input type="text" placeholder="Saya ingin tanya perihal..." class="normalSize normalText black">
+                    <button type="button">
+                        <img src="assets/vectors/send.svg" alt="icon">
+                    </button>
+                </div>
+                <p class="miniSize normalText black op-80">Dimonhon untuk tidak menginput data rahasia</p>
+            </div>
+        </div>
+    </section>
+    <section class="botTrigger bg-blue">
+        <img src="assets/vectors/customer_service.svg" alt="icon">
+        <p class="normalSize semiText white">Our Service</p>
+    </section>
+    <!-- CHAT BOT -->
+    <!-- DETAIL COURSE -->
+    <div class="courseDetail">
+        <div class="container">
+            <div class="navigationCourse">
+                <div class="itemNavigation">
+                    <a href="course.html" class="normalSize semiText blue">Bootcamp</a>
+                </div>
+                <div class="itemNavigation">
+                    <a href="course.html" class="normalSize semiText blue">Online Camp</a>
+                </div>
+                <div class="itemNavigation">
+                    <a href="course.detail.html" class="normalSize semiText blue">Mern Tech for Fullstack</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="main">
+                    <div class="introduction">
+                        <div class="headSide">
+                            <h1 class="nexaText semiSize black">Mern Tech for Fullstack</h1>
+                            <p class="normalSize semiText black op-80">Mr. Toni Santoso</p>
+                        </div>
+                        <div class="detailSide">
+                            <p class="normalSize normalText black op-80">MERN Tech for Fullstack: Materi ini akan membahas secara mendalam dan terstruktur tentang teknologi fullstack menggunakan stack MERN (MongoDB, Express, React, Node.js).</p>
+                        </div>
+                        <div class="extraSide">
+                            <div class="itemDetail">
+                                <img src="assets/vectors/time.svg" alt="time">
+                                <p class="normalSize normalText black op-80">12 jam</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/video.svg" alt="video.svg">
+                                <p class="normalSize normalText black op-80">8 video</p>
+                            </div>
+                        </div>
+                        <div class="actionSide">
+                            <button type="button" class="mainBtn">Join Camp Now</button>
+                            <button type="button" class="secBtn">
+                                <img src="assets/vectors/course_detail_play_blue.svg" alt="play">
+                                3 Days to Start
+                            </button>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="video">
+                        <div class="videoSide">
+                            <img src="assets/imgs/bootcamp_video.png" alt="video">
+                            <h2 class="black semiText mediumSize">Introduction Video : Pengenalan Singkat Moderator</h2>
+                            <p class="normalSize normalText black op-80">Materi pembukaan dari moderator yang nantinya akan memandu Anda dalam mengikuti kegiatan Bootcamp class ini!</p>
+                        </div>
+                        <div class="materiSide">
+                            <h2 class="black semiText mediumSize">Status Bootcamp</h2>
+                            <button type="button" class="secBtn" style="width: 100%;">Waiting The Time</button>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="benefit">
+                        <h2 class="semiSize black nexaText">What Will You Get</h2>
+                        <div class="boxBenefit">
+                            <div class="itemBenefit">
+                                <div class="left">
+                                    <img src="assets/vectors/course_detail_shine_blue.svg" alt="shine">
+                                </div>
+                                <div class="right">
+                                    <h3 class="mediumSize semiText black op-80">Pemahaman Dasar MERN Stack</h3>
+                                    <p class="normalSize normalText black op-80">Pelajari bagaimana teknologi MERN (MongoDB, Express, React, Node.js) bekerja, dari frontend hingga backend, dengan penjelasan yang mudah dipahami.</p>
+                                </div>
+                            </div>
+                            <div class="itemBenefit">
+                                <div class="left">
+                                    <img src="assets/vectors/course_detail_shine_blue.svg" alt="shine">
+                                </div>
+                                <div class="right">
+                                    <h3 class="mediumSize semiText black op-80">Pembangunan Server dan API</h3>
+                                    <p class="normalSize normalText black op-80">Kuasai cara membangun server dan API RESTful menggunakan Node.js dan Express untuk mengelola data dan komunikasi antar aplikasi.</p>
+                                </div>
+                            </div>
+                            <div class="itemBenefit">
+                                <div class="left">
+                                    <img src="assets/vectors/course_detail_shine_blue.svg" alt="shine">
+                                </div>
+                                <div class="right">
+                                    <h3 class="mediumSize semiText black op-80">Antarmuka Pengguna dengan React</h3>
+                                    <p class="normalSize normalText black op-80">Pelajari cara menggunakan React untuk membangun antarmuka pengguna yang interaktif, dinamis, dan responsif.</p>
+                                </div>
+                            </div>
+                            <div class="itemBenefit">
+                                <div class="left">
+                                    <img src="assets/vectors/course_detail_shine_blue.svg" alt="shine">
+                                </div>
+                                <div class="right">
+                                    <h3 class="mediumSize semiText black op-80">Manajemen Database MongoDB</h3>
+                                    <p class="normalSize normalText black op-80">Pelajari cara mengelola dan mengoptimalkan database NoSQL MongoDB untuk menyimpan dan mengakses data aplikasi dengan cepat dan efisien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="teacher">
+                        <h2 class="semiSize black nexaText">About Narator</h2>
+                        <div class="profile">
+                            <div class="image">
+                                <img src="assets/imgs/course_detail_profile.png" alt="profile">
+                            </div>
+                            <div class="detailProfile">
+                                <div class="name">
+                                    <p class="mediumSize semiText black op-80">Mr. Toni Santoso</p>
+                                    <img src="assets/vectors/expand.svg" alt="expand">
+                                </div>
+                                <p class="normalSize normalText black op-80">Backend Lecture</p>
+                            </div>
+                        </div>
+                        <div class="deskription">
+                            <p class="normalSize normalText black op-80">Saya adalah Ananta Darmawangsa, seorang <span>frontend developer</span> dengan hasrat mengajar. Saat ini, saya berperan sebagai <span>lecture di Codeverse</span>, sebuah lembaga pelatihan pemrograman terkemuka. Selama 5 tahun terakhir, saya telah membantu ribuan siswa mempelajari coding dan mengubah hidup mereka dengan <span>menjadi seorang developer</span>. Saya juga pernah diundang oleh perusahaan seperti Google dan Facebook untuk mengajar karyawan mereka. <br> <br>
+                                Perjalanan saya dalam dunia pemrograman dimulai ketika saya berusia 12 tahun, bercita-cita membuat game Space Invader sendiri. Sejak itu, saya telah menciptakan ratusan website, aplikasi, dan game. Namun, yang paling penting, saya menyadari bahwa <span>passion terbesar saya adalah mengajar</span>. <br> <br>
+                                Sebagian besar waktu saya dihabiskan untuk meneliti bagaimana membuat pembelajaran coding menyenangkan dan <span>konsep-konsep</span> sulit mudah dipahami. Penemuan-penemuan saya kemudian saya terapkan dalam kursus-kursus bootcamp saya. Dalam kursus saya, Anda akan menemukan banyak humor geek, tetapi juga banyak penjelasan dan animasi untuk memastikan semuanya mudah dipahami. <br> <br>
+                                Saya akan selalu ada untuk membantu Anda dalam setiap langkah perjalanan belajar Anda.</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="rating">
+                        <h2 class="nexaText semiSize black">Certificate Rating</h2>
+                        <div class="boxRating">
+                            <div class="itemRating">
+                                <div class="profileRating">
+                                    <div class="image">
+                                        <img src="assets/imgs/testimonial_profile01.png" alt="profile">
+                                    </div>
+                                    <div class="user">
+                                        <div class="name">
+                                            <p class="mediumSize semiText black">Jana Kerthi</p>
+                                            <img src="assets/vectors/full-rating.svg" alt="rating">
+                                        </div>
+                                        <div class="extra">
+                                            <p class="miniSize normalText black op-80">1 hari</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ulasan">
+                                    <p class="normalSize normalText black op-80">Wajib banget sih buat yang mau bikin website sendiri! Kursus ini ngebantu banget buat ngerti dasar-dasar coding. Dijamin nggak bakal ngebosenin, tutornya asik banget!</p>
+                                </div>
+                            </div>
+                            <div class="itemRating">
+                                <div class="profileRating">
+                                    <div class="image">
+                                        <img src="assets/imgs/testimonial_profile03.png" alt="profile">
+                                    </div>
+                                    <div class="user">
+                                        <div class="name">
+                                            <p class="mediumSize semiText black">Putri Intan</p>
+                                            <img src="assets/vectors/minus-rating.svg" alt="rating">
+                                        </div>
+                                        <div class="extra">
+                                            <p class="miniSize normalText black op-80">2 hari</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ulasan">
+                                    <p class="normalSize normalText black op-80">Finally, aku bisa bikin website sendiri! Materinya lengkap banget, dari nol sampai bisa bikin website keren. Recommended banget buat yang mau belajar coding!</p>
+                                </div>
+                            </div>
+                            <div class="itemRating">
+                                <div class="profileRating">
+                                    <div class="image">
+                                        <img src="assets/imgs/testimonial_profile02.png" alt="profile">
+                                    </div>
+                                    <div class="user">
+                                        <div class="name">
+                                            <p class="mediumSize semiText black">Bagas P.</p>
+                                            <img src="assets/vectors/full-rating.svg" alt="rating">
+                                        </div>
+                                        <div class="extra">
+                                            <p class="miniSize normalText black op-80">4 hari</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ulasan">
+                                    <p class="normalSize normalText black op-80">Buat pemula kayak aku, kursus ini tuh gampang banget dipahamin. Tutornya sabar banget ngejelasin, jadi nggak bingung. Pokoknya puas banget deh!</p>
+                                </div>
+                            </div>
+                            <div class="itemRating">
+                                <div class="profileRating">
+                                    <div class="image">
+                                        <img src="assets/imgs/testimonial_profile05.png" alt="profile">
+                                    </div>
+                                    <div class="user">
+                                        <div class="name">
+                                            <p class="mediumSize semiText black">Siska A.</p>
+                                            <img src="assets/vectors/full-rating.svg" alt="rating">
+                                        </div>
+                                        <div class="extra">
+                                            <p class="miniSize normalText black op-80">7 hari</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ulasan">
+                                    <p class="normalSize normalText black op-80">Kursus ini seru banget! Materinya dikemas dengan menarik, jadi nggak ngantuk. Sekarang aku udah bisa bikin website sederhana, keren kan?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="requirement">
+                        <h2 class="semiSize black nexaText">Requirements</h2>
+                        <div class="boxReq">
+                            <div class="itemReq">
+                                <img src="assets/vectors/rec.svg" alt="rec">
+                                <p class="normalSize normalText black op-80">Tidak diperlukan berbagai pemahaman mengenai dunia IT seperti coding dan sebagainya, semua akan diajarkan secara mendasar</p>
+                            </div>
+                            <div class="itemReq">
+                                <img src="assets/vectors/rec.svg" alt="rec">
+                                <p class="normalSize normalText black op-80">Kemampuan browsing dan berselancar di Internet jauh lebih diperlukan dalam proses pembelajaran kedepannya</p>
+                            </div>
+                            <div class="itemReq">
+                                <img src="assets/vectors/rec.svg" alt="rec">
+                                <p class="normalSize normalText black op-80">Keinginan untuk belajar yang tinggi yang akan membantu suksesnya pembelajaran course Anda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div class="headSide">
+                        <div class="navigationPayment">
+                            <div class="link">
+                                <a href="course.html" class="normalSize semiText black op-60">Bootcamp</a>
+                                <a href="course.html" class="normalSize semiText black op-60">Online Camp</a>
+                            </div>
+                            <div class="close">
+                                <img src="assets/vectors/close_black.svg" alt="close">
+                            </div>
+                        </div>
+                        <div class="titleCourse">
+                            <p class="midSize semiText black">Mern Tect for Fullstack</p>
+                            <p class="semiText normalSize black op-80">Mr. Toni Santoso</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="bodySide">
+                        <h3 class="normalSize semiText black">Bootcamp ini berisi :</h3>
+                        <div class="itemBody op-80">
+                            <img src="assets/vectors/materi.svg" alt="icon">
+                            <p class="normalSize normalText black">Materi bebas akses</p>
+                        </div>
+                        <div class="itemBody op-80">
+                            <img src="assets/vectors/videoo.svg" alt="icon">
+                            <p class="normalSize normalText black">Live class</p>
+                        </div>
+                        <div class="itemBody op-80">
+                            <img src="assets/vectors/device.svg" alt="icon">
+                            <p class="normalSize normalText black">Akses multi device</p>
+                        </div>
+                        <div class="itemBody op-80">
+                            <img src="assets/vectors/sertif.svg" alt="icon">
+                            <p class="normalSize normalText black">Sertifikat kursus</p>
+                        </div>
+                        <div class="itemBody op-80">
+                            <img src="assets/vectors/worldwid.svg" alt="icon">
+                            <p class="normalSize normalText black">Pengakuan internasional</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footSide">
+                        <div class="price">
+                            <p class="midSize black boldText">Rp 1.250.000</p>
+                            <p class="normalSize normalText black op-60 strike">Rp 5.500.000</p>
+                            <img src="assets/vectors/disc.svg" alt="disc">
+                        </div>
+                        <button type="button" class="mainBtn ctn">Continue For Rp 1.250.000</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MOBILE ACTION -->
+    <div class="mobileAction">
+        <div class="container">
+            <div class="leftSide">
+                <p class="mediumSize semiText black">Mern Tect for Fullstack</p>
+                <p class="normalSize normalText black op-80">Mr. Toni Santoso</p>
+            </div>
+            <div class="rightSide">
+                <button class="mainBtn ctn"><span class="tablet">Continue for Rp 1.250.000</span> <span class="mobile-ver">Continue</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- DETAIL COURSE -->
+    <!-- OTHER COURSE -->
+    <section class="otherCard simpleCardLayout marginSection">
+        <div class="container">
+            <div class="headSide">
+                <p class="normalSize normalText black op-80">Anythings You Need</p>
+                <h2 class="nexaText semiSize black">Other Bootcamp </h2>
+            </div>
+            <div class="bodySide">
+                <div class="cardDesign bc">
+                    <div class="imageCard">
+                        <img src="assets/imgs/bootcamp_1.png" alt="course">
+                    </div>
+                    <div class="bodyCard">
+                        <p class="miniSize normalText black op-80">Online Camp</p>
+                        <p class="boldText normalSize black">Software Engineering : MERN Tech For Fullstack</p>
+                        <div class="detailCard">
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-tanggal.svg" alt="time">
+                                <p class="miniSize normalText black op-80">20 September 2024</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-certi.svg" alt="user.svg">
+                                <p class="miniSize normalText black op-80">E-Certificate & Project</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/price.svg" alt="video.svg">
+                                <p class="miniSize normalText black op-80">Rp 500.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardDesign bc">
+                    <div class="imageCard">
+                        <img src="assets/imgs/bootcamp_2.png" alt="course">
+                    </div>
+                    <div class="bodyCard">
+                        <p class="miniSize normalText black op-80">Online Camp</p>
+                        <p class="boldText normalSize black">Data Science: Advanced Machine Learning Python</p>
+                        <div class="detailCard">
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-tanggal.svg" alt="time">
+                                <p class="miniSize normalText black op-80">24 September 2024</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-certi.svg" alt="user.svg">
+                                <p class="miniSize normalText black op-80">E-Certificate & Project</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/price.svg" alt="video.svg">
+                                <p class="miniSize normalText black op-80">Rp 300.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardDesign bc">
+                    <div class="imageCard">
+                        <img src="assets/imgs/bootcamp_3.png" alt="course">
+                    </div>
+                    <div class="bodyCard">
+                        <p class="miniSize normalText black op-80">Online Camp</p>
+                        <p class="boldText normalSize black">Cybersecurity: Protecting Networks with Ethical Hacking</p>
+                        <div class="detailCard">
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-tanggal.svg" alt="time">
+                                <p class="miniSize normalText black op-80">28 September 2024</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-certi.svg" alt="user.svg">
+                                <p class="miniSize normalText black op-80">E-Certificate & Project</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/price.svg" alt="video.svg">
+                                <p class="miniSize normalText black op-80">Rp 200.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardDesign bc">
+                    <div class="imageCard">
+                        <img src="assets/imgs/bootcamp_4.png" alt="course">
+                    </div>
+                    <div class="bodyCard">
+                        <p class="miniSize normalText black op-80">Online Camp</p>
+                        <p class="boldText normalSize black">Digital Marketing: Mastering SEO, SEM, and Social Media</p>
+                        <div class="detailCard">
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-tanggal.svg" alt="time">
+                                <p class="miniSize normalText black op-80">29 September 2024</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/e-certi.svg" alt="user.svg">
+                                <p class="miniSize normalText black op-80">E-Certificate & Project</p>
+                            </div>
+                            <div class="itemDetail">
+                                <img src="assets/vectors/price.svg" alt="video.svg">
+                                <p class="miniSize normalText black op-80">Rp 350.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OTHER COURSE -->
+    <!-- CALLTOACTION -->
+    <section class="callToAction bg-blue">
+        <div class="container">
+            <div class="content">
+                <h2 class="nexaText semiSize white">Take Your First Step Up Now!</h2>
+                <p class="normalSize normalText white op-80">Tunggu apa lagi? Pilih berbagai jenis course maupun bootcamp yang ada dan segera melangkah menuju kesuksesan di era digital! Let’s Learn Beyond Classroom</p>
+                <button class="mainBtn alpha">Get Course Now</button>
+                <img src="assets/vectors/attribute-one.svg" alt="attribute" class="attribute-one">
+                <img src="assets/vectors/attribute-two.svg" alt="attribute" class="attribute-two">
+            </div>
+        </div>
+        <div class="background">
+            <img src="assets/vectors/bg-garis-left.svg" alt="bg" class="garis-left">
+            <img src="assets/vectors/bg-garis-right.svg" alt="bg" class="garis-right">
+        </div>
+    </section>
+    <!-- CALLTOACTION -->
+    <!-- START FOOTER -->
+    <footer class="gradient">
+        <div class="container">
+            <div class="topFooter">
+                <div class="bigSide">
+                    <a href="index.html">
+                        <img src="assets/vectors/logo_colour_horizontal.svg" alt="logo">
+                    </a>
+                    <p class="black normalText normalSize op-80">Temukan berbagai keajaiban yang tersembunyi dibalik materi pembelajaran berbasis teknologi terbaru hanya disini.</p>
+                    <div class="iconSosmed">
+                        <a href="">
+                            <img src="assets/vectors/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="">
+                            <img src="assets/vectors/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="">
+                            <img src="assets/vectors/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="">
+                            <img src="assets/vectors/tiktok.svg" alt="tiktok">
+                        </a>
+                    </div>
+                </div>
+                <div class="bigSide alpha">
+                    <div class="smallSide">
+                        <p class="black normalSize semiText titleNavFooter">Navigation</p>
+                        <p class="black normalSize normalText op-80">Home</p>
+                        <p class="black normalSize normalText op-80">Course</p>
+                        <p class="black normalSize normalText op-80">Bootcamp</p>
+                        <p class="black normalSize normalText op-80">Learn Path</p>
+                    </div>
+                    <div class="smallSide">
+                        <p class="black normalSize semiText titleNavFooter">Other</p>
+                        <p class="black normalSize normalText op-80">Trending</p>
+                        <p class="black normalSize normalText op-80">Promotion</p>
+                        <p class="black normalSize normalText op-80">Testimonial</p>
+                        <p class="black normalSize normalText op-80">Blog</p>
+                        <p class="black normalSize normalText op-80">Certificate</p>
+                        <p class="black normalSize normalText op-80">Deals</p>
+                    </div>
+                    <div class="smallSide alpha">
+                        <p class="black normalSize semiText titleNavFooter">Extra</p>
+                        <p class="black normalSize normalText op-80">Guides</p>
+                        <p class="black normalSize normalText op-80">Terms of Sale</p>
+                        <p class="black normalSize normalText op-80">Terms of Use</p>
+                        <p class="black normalSize normalText op-80">Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="bigSide">
+                    <p class="black normalSize semiText titleNavFooter">Let's Talk</p>
+                    <input type="text" name="mail" id="mail" placeholder="Hai, aku ingin tau lebih!">
+                    <p class="black normalSize normalText op-80">admin.codeverse@gmail.com</p>
+                    <p class="black normalSize normalText op-80">(0361) 1234 5678</p>
+                </div>
+            </div>
+            <div class="bottomFooter">
+                <div class="copyRight">
+                    <img src="assets/vectors/copyright.svg" alt="copyright">
+                    <p class="black normalText normalSize">2024 Codeverse, Inc. All Rights Reserved</p>
+                </div>
+                <div class="extraLinks">
+                    <p class="black normalText normalSize">Guides</p>
+                    <p class="black normalText normalSize">Terms of Sale</p>
+                    <p class="black normalText normalSize">Terms of Use</p>
+                    <p class="black normalText normalSize">Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+</body>
+    <script src="js/main.js"></script>
+    <script>
+        const content = document.querySelector(".courseDetail .container .content")
+        const contentTop = content.getBoundingClientRect().top
+        const contentHeight = content.getBoundingClientRect().height
+        const gap = 40
+
+        const payment = document.querySelector(".courseDetail .container .content .payment")
+        const paymentHeight = payment.getBoundingClientRect().height
+        document.addEventListener("scroll", () => {
+            let width = window.innerWidth
+            let scrolled = window.pageYOffset
+            let distance = scrolled + gap - contentTop
+            if(width > 1024){
+                if(distance >= 0){
+                    if(distance >= contentHeight - paymentHeight){
+                        payment.style.transform = "translateY("+ contentHeight - paymentHeight + gap +"px)"
+                    }else{
+                        payment.style.transform = "translateY("+ distance +"px)"
+                    }
+                }else{
+                    payment.style.transform = "translateY(0px)"
+                }
+            }
+        })
+
+        const mobileAction = document.querySelector(".mobileAction")
+        const mobileActionBtn = document.querySelector(".mobileAction .container .rightSide button")
+        mobileActionBtn.addEventListener("click", () => {
+            mobileAction.style.transform = "translateY(100%)"
+            payment.style.bottom = "0%"
+        })
+
+        document.querySelectorAll(".ctn").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                document.location.href = "payment.html"
+            })
+        })
+    </script>
+</html>

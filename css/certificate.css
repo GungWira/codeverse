@@ -1,0 +1,177 @@
+.hero{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hero .container{
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.hero .container .person{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container .person img{
+    width: 100%;
+}
+.hero .container .textSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    min-width: 562px;
+}
+.hero .container .searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #DBE0E1;
+    width: 100%;
+    margin-top: 8px;
+}
+.hero .container .searchbar input{
+    height: 52px;
+    padding-left: 16px;
+    width: 100%;
+    outline: none;
+    display: flex;
+}
+.hero .container .searchbar button{
+    height: 52px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    transition: .2s ease-in-out;
+}
+.hero .container .searchbar button:hover{
+    background-color: #044AAF;
+}
+
+
+.salary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.salary .container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.salary .container .headSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.salary .container .bodySide{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.salary .container .bodySide .itemSalary{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #1d1d1d20;
+    width: calc(100% / 2 - 8px);
+    transition: .2s ease-in-out;
+}
+.salary .container .bodySide .itemSalary:hover{
+    background-color: whitesmoke;
+}
+.salary .container .bodySide .itemSalary .topSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.salary .container .bodySide .itemSalary .midSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+.salary .container .bodySide .itemSalary .midSide .itemMid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.salary .container .bodySide .itemSalary .midSide .coverButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+.salary .container .bodySide .itemSalary .midSide .coverButton button{
+    font-size: 16px;
+}
+
+@media screen and (max-width : 1340px) {
+    .hero .container .person{
+        min-width: 285px;
+    }
+}
+@media screen and (max-width : 1024px) {
+    .hero .container .textSide{
+        min-width: 362px;
+    }
+}
+@media screen and (max-width : 942px) {
+    .salary .container .bodySide{
+        flex-direction: column;
+    }
+    .salary .container .bodySide .itemSalary{
+        width: 100%;
+    }
+    .salary .container .bodySide .itemSalary .topSide img{
+        width: 64px;
+    }
+}
+@media screen and (max-width : 562px) {
+    .salary .container .bodySide .itemSalary .midSide{
+        width: 100%;
+    }
+    .salary .container .bodySide .itemSalary .midSide .coverButton{
+        flex-direction: column;
+        width: 100%;
+    }
+    .salary .container .bodySide .itemSalary .midSide .coverButton button{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 400px) {
+    .hero .container .textSide{
+        min-width: 100%;
+    }
+}
