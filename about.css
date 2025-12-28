@@ -1,0 +1,100 @@
+/* Global */
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.vision-section,
+.mission-section,
+.team-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Vision */
+.vision-box {
+  background: #f5f7fa;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Mission */
+.mission-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.mission-item {
+  background: #ffffff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Team */
+.team-grid {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-card {
+  text-align: center;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team-card span {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-card {
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
